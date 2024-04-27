@@ -1,5 +1,5 @@
 const readCSV = require("../../src/csvReader");
-const parseQuery = require("../../src/queryParser");
+const { parseQuery } = require("../../src/queryParser");
 const executeSELECTQuery = require("../../src/index");
 // tests/index.test.js
 
@@ -21,6 +21,7 @@ test("Parse SQL Query", () => {
     joinTable: null,
     table: "sample",
     whereClauses: [],
+    joinType: null,
   });
 });
 
